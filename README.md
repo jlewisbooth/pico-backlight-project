@@ -13,4 +13,4 @@ Here is a list of the components used in this project and documentation links to
 
 ## Basic Project Layout
 
-![Basic Visuals for Project Hardware](./Resources/Project Layout.png)
+![Basic Visuals for Project Hardware](./Resources/project-layout.png)
