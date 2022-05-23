@@ -1,6 +1,3 @@
-import { reactive } from 'vue'
-// import DefaultOptions from './default-options'
-
 const NUM_OF_PIXELS = 30
 
 function formatPixelObject(index) {
@@ -12,11 +9,17 @@ function formatPixelObject(index) {
 
 export const state = () => ({
   counter: 0,
-  pallette: [1, 2, 3],
+  pallette: [],
+  maxColours: 8,
 })
 
 export const mutations = {
   increment(state) {
     state.counter++
+  },
+  addColourToPallette(state, colour) {
+    if (state.pallette.length < state.maxColours) {
+      state.pallette.push(colour)
+    }
   },
 }
